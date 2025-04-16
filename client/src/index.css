@@ -2,11 +2,27 @@
 
 @import "tailwindcss";
 
-*{
+* {
   font-family: "outfit", sans-serif;
 }
 
-@theme{
+@theme {
   --color-primary: #4fbf8b;
   --color-primary-dull: #44ae7c;
+}
+
+/* This allows scrolling but hides the scrollbars */
+html,
+body {
+  overflow: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
 }
